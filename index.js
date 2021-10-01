@@ -22,3 +22,9 @@ for (let i = 0; i < dogs.length; i++) {
         + ' is a ' + size
         + ' ' + dogs[i].breed);
 }
+/*
+Dog: Jessy is a large Cocker spaniel
+Dog: Fido is a large Mixed
+Dog: Fluffy is a large Poodle
+Dog: Spot is a small Chihuahua
+*/
