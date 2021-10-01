@@ -5,8 +5,20 @@ function Dog(name, breed, weight) {
     this.weight = weight;
 }
 
-let dog = new Dog('Jasy', 'Cocker spaniel', 18);
-alert(dog.name);
-alert(dog.breed);
-alert(dog.weight);
-alert(dog);
+let jessy = new Dog('Jessy', 'Cocker spaniel', 18);
+let fido = new Dog('Fido', 'Mixed', 38);
+let fluffy = new Dog('Fluffy', 'Poodle', 30);
+let spot = new Dog('Spot', 'Chihuahua', 10);
+let dogs = [jessy, fido, fluffy, spot];
+
+for (let i = 0; i < dogs.length; i++) {
+    let size = 'small';
+
+    if (dogs[i].weight > 10) {
+        size = 'large';
+    }
+
+    console.log('Dog: ' + dogs[i].name
+        + ' is a ' + size
+        + ' ' + dogs[i].breed);
+}
