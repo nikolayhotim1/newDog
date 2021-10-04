@@ -3,6 +3,14 @@ function Dog(name, breed, weight) {
     this.name = name;
     this.breed = breed;
     this.weight = weight;
+
+    this.bark = function () {
+        if (this.weight > 25) {
+            alert(this.name + " says Woof!");
+        } else {
+            alert(this.name + " says Yip!");
+        }
+    };
 }
 
 let jessy = new Dog('Jessy', 'Cocker spaniel', 18);
@@ -22,9 +30,7 @@ for (let i = 0; i < dogs.length; i++) {
         + ' is a ' + size
         + ' ' + dogs[i].breed);
 }
-/*
-Dog: Jessy is a large Cocker spaniel
-Dog: Fido is a large Mixed
-Dog: Fluffy is a large Poodle
-Dog: Spot is a small Chihuahua
-*/
+
+for (let i = 0; i < dogs.length; i++) {
+    dogs[i].bark();
+}
